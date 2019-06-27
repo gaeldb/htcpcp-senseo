@@ -4,6 +4,8 @@ HTCPCP server implementation for Philips Senseo
 This project is an implementation of HTCPCP 1.0, as [described in RFC 2324](https://www.ietf.org/rfc/rfc2324.txt), in a Philips Senseo coffee machine.
 It uses a arduino with ethernet shield as CoIP (coffee over IP) controller.
 
+![HTCPCP Senseo](senseo.png?raw=true "HTCPCP Senseo")
+
 ## Features
 To be descrided.
 
