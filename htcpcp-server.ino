@@ -5,7 +5,7 @@
  * Global variables
  */
 
-byte mac[] = { 0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02};
+byte mac[] = {0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x02};
 
 // Fix IP address if DHCP is unreachable
 IPAddress ip(192, 168, 1, 127);
@@ -52,14 +52,17 @@ void          loop()
         httpReq += c;
         if (c == '\n' && currentLineIsBlank && req_str.startsWith("GET"))
         {
+          // Waiting for implementation
           response(client, "406 Not acceptable here");
         }
         else if (c == '\n' && currentLineIsBlank && (req_str.startsWith("POST") || req_str.startsWith("BREW")))
         {
+          // Waiting for implementation
           response(client, "406 Not acceptable here");
         }
         else if (c == '\n' && currentLineIsBlank && (req_str.startsWith("PROFIND") || req_str.startsWith("WHEN")))
         {
+          // Will ne be implemented due to hardware limitation. See README.md.
           response(client, "501 Not Implemented");
         }
         
